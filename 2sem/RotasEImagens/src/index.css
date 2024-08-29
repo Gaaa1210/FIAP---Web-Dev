@@ -59,12 +59,13 @@ nav ul li a:hover {
   flex: 1;
 }
 
-.skill-card {
+.skill-card {  /*Aqui é da onde esta sendo importado o modelo de Card*/ 
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
 }
+
 #contact{
   text-align: center;
 }

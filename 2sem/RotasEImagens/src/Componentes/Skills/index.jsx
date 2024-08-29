@@ -1,19 +1,34 @@
+import Card from "../Card"; /*Ele esta importando o CSS do arquivo index.css*/ 
+
 function Skills({ skills }) {
+  const habilidades = [
+    {
+      titulo: "HTML",
+      nivel: "Avançado",
+      tempopx: "10 anos",
+      color: "blue",
+      // imgIcone: consigo passar uma imagem
+    },
+    {
+      titulo: "CSS",
+      nivel: "Básico",
+      tempopx: "5 anos",
+      color: "green",
+      
+    }, 
+    {
+      titulo: "React",
+      nivel: "Não sei",
+      tempopx: "5 meses",
+      color: "red",
+      // imgIcone: consigo passar uma imagem
+    },
+  ]
+
   return (
-    <div className="skills">
+    <div classNama = "skills">
       <h2>Habilidades</h2>
-                <div class="skill-card">
-                    <h3>HTML</h3>
-                    <p>Nível: Avançado</p>
-                </div>
-                <div class="skill-card">
-                    <h3>CSS</h3>
-                    <p>Nível: Intermediário</p>
-                </div>
-                <div class="skill-card">
-                    <h3>JavaScript</h3>
-                    <p>Nível: Básico</p>
-                </div>
+      <Card dados = {habilidades}/>
     </div>
   );
 }
